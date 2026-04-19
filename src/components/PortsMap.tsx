@@ -79,6 +79,17 @@ export default function PortsMap() {
     const baseRadius = isTouch ? 7 : 4;
     const hoverRadius = isTouch ? 9 : 6;
 
+    // Cache of successfully-loaded image URLs. Once a port's image has loaded
+    // once, future tooltipopens can inject <img src> directly — browser HTTP
+    // cache serves it instantly, no network queue, no async callback churn.
+    const loadedSrcs = new Set<string>();
+    // In-flight loads so repeated hovers on the same port don't kick off
+    // multiple parallel Image() requests.
+    const inFlight = new Map<string, HTMLImageElement>();
+    // Hover-intent timer per marker — sweeping across many ports no longer
+    // triggers loads because the mouse never dwells long enough.
+    const HOVER_INTENT_MS = 140;
+
     ports.forEach((p) => {
       const marker = L.circleMarker([p.lat, p.lng], {
         renderer: canvasRenderer,
@@ -111,39 +122,67 @@ export default function PortsMap() {
         }
       );
 
+      let hoverTimer: number | undefined;
+
+      // Inject the <img> into the current tooltip DOM. Slot has a reserved
+      // 100px height in CSS so swapping in the image does NOT resize the
+      // tooltip — no reflow, no reposition, no layer thrash.
+      const injectImage = (src: string) => {
+        const tip = marker.getTooltip();
+        const el = tip?.getElement() as HTMLElement | null;
+        if (!el) return; // tooltip already closed — skip
+        const slot = el.querySelector('.port-tip-img-slot') as HTMLElement | null;
+        if (!slot) return; // already replaced
+        const img = document.createElement('img');
+        img.className = 'port-tip-img';
+        img.decoding = 'async';
+        img.src = src;
+        slot.replaceWith(img);
+      };
+
       marker.on('mouseover', () => {
         marker.setStyle({ radius: hoverRadius, fillOpacity: 1, opacity: 1 });
+        if (!imgSrc) return;
+        // Already cached → inject directly from browser cache on the current
+        // tooltipopen (runs after this handler).
+        if (loadedSrcs.has(imgSrc)) return;
+        // Hover-intent: sweeping across ports won't linger this long, so we
+        // don't queue up dozens of image requests while the user is just
+        // moving the mouse across the map.
+        hoverTimer = window.setTimeout(() => {
+          let img = inFlight.get(imgSrc);
+          if (!img) {
+            img = new Image();
+            img.decoding = 'async';
+            inFlight.set(imgSrc, img);
+            img.addEventListener('load', () => {
+              loadedSrcs.add(imgSrc);
+              inFlight.delete(imgSrc);
+              // Only inject if this marker's tooltip is still open — avoids
+              // the old bug where late onloads thrashed the tooltip layer for
+              // ports the user had long moved past.
+              if (marker.isTooltipOpen()) injectImage(imgSrc);
+            }, { once: true });
+            img.addEventListener('error', () => { inFlight.delete(imgSrc); }, { once: true });
+            img.src = imgSrc;
+          } else if (img.complete) {
+            if (marker.isTooltipOpen()) injectImage(imgSrc);
+          }
+        }, HOVER_INTENT_MS);
       });
       marker.on('mouseout', () => {
         marker.setStyle({ radius: baseRadius, fillOpacity: 0.55, opacity: 0.85 });
+        if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = undefined; }
       });
       marker.on('click', (e) => {
         L.DomEvent.stopPropagation(e);
         marker.setStyle({ radius: hoverRadius, fillOpacity: 1, opacity: 1 });
         marker.openTooltip();
       });
-      marker.on('tooltipopen', (e) => {
-        const el = (e.tooltip.getElement() as HTMLElement | null);
-        if (!el) return;
-        const slot = el.querySelector('.port-tip-img-slot') as HTMLElement | null;
-        if (slot && !slot.dataset.loaded) {
-          const src = slot.dataset.src;
-          if (src) {
-            const img = new Image();
-            img.className = 'port-tip-img';
-            img.decoding = 'async';
-            img.loading = 'lazy';
-            img.onload = () => {
-              slot.replaceWith(img);
-              // Reposition after image lays out (so direction 'auto' picks a side
-              // that keeps the tooltip on-screen)
-              marker.closeTooltip();
-              marker.openTooltip();
-            };
-            img.src = src;
-          }
-          slot.dataset.loaded = '1';
-        }
+      // When tooltip opens and the image is already in our cache, inject it
+      // synchronously so there's no blank-slot flash.
+      marker.on('tooltipopen', () => {
+        if (imgSrc && loadedSrcs.has(imgSrc)) injectImage(imgSrc);
       });
 
       cluster.addLayer(marker);
