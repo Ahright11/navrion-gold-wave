@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import 'leaflet.markercluster/dist/MarkerCluster.css';
-import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import L from 'leaflet';
-import 'leaflet.markercluster';
 
 import portsData from '@/data/ports.json';
 import portImages from '@/data/port-images.json';
@@ -57,24 +54,9 @@ export default function PortsMap() {
       countryCounts[p.country] = (countryCounts[p.country] || 0) + 1;
     });
 
-    // Cluster group — collapses dense regions (Rotterdam/Antwerp/Hamburg etc.)
-    // so taps resolve to an actual target instead of overlapping dots.
-    const cluster = L.markerClusterGroup({
-      maxClusterRadius: 40,
-      showCoverageOnHover: false,
-      spiderfyOnMaxZoom: true,
-      chunkedLoading: true,
-      chunkInterval: 100,
-      disableClusteringAtZoom: 7,
-      iconCreateFunction: (c) => {
-        const n = c.getChildCount();
-        return L.divIcon({
-          html: `<div class="port-cluster-inner">${n}</div>`,
-          className: 'port-cluster',
-          iconSize: [32, 32],
-        });
-      },
-    });
+    // Individual markers on a shared canvas layer — no clustering, so every
+    // port is hoverable/clickable directly (desktop UX: tooltips with pics).
+    const portsLayer = L.layerGroup();
 
     const baseRadius = isTouch ? 7 : 4;
     const hoverRadius = isTouch ? 9 : 6;
@@ -185,14 +167,14 @@ export default function PortsMap() {
         if (imgSrc && loadedSrcs.has(imgSrc)) injectImage(imgSrc);
       });
 
-      cluster.addLayer(marker);
+      marker.addTo(portsLayer);
     });
 
-    map.addLayer(cluster);
+    portsLayer.addTo(map);
 
     // Tap on empty map area closes any open tooltip (mobile)
     map.on('click', () => {
-      cluster.eachLayer((layer) => {
+      portsLayer.eachLayer((layer) => {
         (layer as L.CircleMarker).closeTooltip?.();
       });
     });
@@ -355,24 +337,6 @@ export default function PortsMap() {
         }
         .leaflet-interactive {
           cursor: pointer !important;
-        }
-        .port-cluster {
-          background: transparent;
-        }
-        .port-cluster-inner {
-          width: 32px;
-          height: 32px;
-          border-radius: 999px;
-          background: radial-gradient(circle at 50% 45%, hsl(208 74% 55%), hsl(208 74% 38%));
-          color: white;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 600;
-          font-size: 11px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1.5px solid rgba(255,255,255,0.25);
-          box-shadow: 0 0 0 4px rgba(74,159,229,0.15);
         }
       `}</style>
     </section>
