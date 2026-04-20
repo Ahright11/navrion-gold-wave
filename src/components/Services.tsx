@@ -62,6 +62,7 @@ export default function Services() {
           <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-3 reveal hidden sm:block" style={{ transitionDelay: "250ms" }}>
             {t.servicesIntro}
           </p>
+          {/* Desktop — stacked 3-line list */}
           <div className="max-w-3xl mx-auto sm:mb-2 reveal hidden sm:block" style={{ transitionDelay: "300ms" }}>
             <p className="font-raleway sm:text-xs md:text-sm text-[hsl(208_80%_18%)] leading-relaxed font-medium mb-1.5">
               {t.chartererCoop}
@@ -74,6 +75,34 @@ export default function Services() {
                 {line}
               </p>
             ))}
+          </div>
+
+          {/* Mobile — scrolling marquee */}
+          <div className="sm:hidden reveal mt-1 mb-0.5" style={{ transitionDelay: "300ms" }}>
+            <p className="font-raleway text-[9px] min-[390px]:text-[10px] text-[hsl(208_80%_18%)] font-medium text-center mb-1">
+              {t.chartererCoop}
+            </p>
+            <div
+              className="relative w-full overflow-hidden"
+              style={{
+                maskImage:
+                  "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+                WebkitMaskImage:
+                  "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+              }}
+            >
+              <div className="flex whitespace-nowrap animate-marquee w-max">
+                {[0, 1].map((dup) => (
+                  <span
+                    key={dup}
+                    aria-hidden={dup === 1}
+                    className="inline-flex items-center shrink-0 px-4 font-raleway text-[9px] min-[390px]:text-[10px] tracking-[0.08em] uppercase text-[hsl(215_15%_45%)]"
+                  >
+                    {t.chartererList.join(" · ")} <span className="px-2 text-[hsl(208_74%_42%)]/40">•</span>
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
           <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-4 reveal hidden sm:block italic" style={{ transitionDelay: "350ms" }}>
             {t.envStrategy}
