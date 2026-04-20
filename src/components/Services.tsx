@@ -96,9 +96,9 @@ export default function Services() {
                   <span
                     key={dup}
                     aria-hidden={dup === 1}
-                    className="inline-flex items-center shrink-0 px-4 font-raleway text-[9px] min-[390px]:text-[10px] tracking-[0.08em] uppercase text-[hsl(215_15%_45%)]"
+                    className="inline-flex items-center shrink-0 px-3 font-display font-bold text-[7px] min-[390px]:text-[8px] tracking-[0.14em] uppercase text-[hsl(208_80%_20%)]"
                   >
-                    {t.chartererList.join(" · ")} <span className="px-2 text-[hsl(208_74%_42%)]/40">•</span>
+                    {t.chartererList.join(" · ")} <span className="px-2 text-[hsl(208_74%_42%)]/50">◆</span>
                   </span>
                 ))}
               </div>
