@@ -48,7 +48,12 @@ const translations = {
     crewSub: 'Recruitment · Training · Welfare',
     crewDesc: 'Global crew recruitment with STCW-certified officers, continuous training programs, and industry-leading retention rates. Complete crew accounting, welfare services, and full MLC 2006 compliance across the fleet.',
 
-    chartererCoop: 'We co-operate with top-tier Charterers like OLDENDORFF, TATA, PACIFIC BASIN, WESTERN BULK, TONGLI, G2 OCEAN, NORDEN, HYUNDAI GLOVIS, MUR, LOUIS DREYFUS COMPANY, BAINBRIDGE, TEAMBULK, DAIFU, PROPEL, PANOCEAN, BULK ASIA, XO SHIPPING etc.',
+    chartererCoop: 'We co-operate with top-tier Charterers like:',
+    chartererList: [
+      'OLDENDORFF · TATA · PACIFIC BASIN · WESTERN BULK · TONGLI · G2 OCEAN',
+      'NORDEN · HYUNDAI GLOVIS · MUR · LOUIS DREYFUS COMPANY · BAINBRIDGE',
+      'TEAMBULK · DAIFU · PROPEL · PANOCEAN · BULK ASIA · XO SHIPPING · etc.',
+    ],
     envStrategy: 'In line with our Environmental strategy for lower fuel consumption and \'over and above\' regulatory compliance, we are investing in modern Tier III eco-friendly technology vessels.',
 
     // Fleet
@@ -108,7 +113,12 @@ const translations = {
     crewSub: 'Στρατολόγηση · Εκπαίδευση · Πρόνοια',
     crewDesc: 'Παγκόσμια στρατολόγηση πληρώματος με STCW-πιστοποιημένους αξιωματικούς, συνεχή εκπαίδευση και κορυφαία ποσοστά διατήρησης. Πλήρης λογιστική πληρώματος και συμμόρφωση MLC 2006.',
 
-    chartererCoop: 'Συνεργαζόμαστε με κορυφαίους Ναυλωτές όπως OLDENDORFF, TATA, PACIFIC BASIN, WESTERN BULK, TONGLI, G2 OCEAN, NORDEN, HYUNDAI GLOVIS, MUR, LOUIS DREYFUS COMPANY, BAINBRIDGE, TEAMBULK, DAIFU, PROPEL, PANOCEAN, BULK ASIA, XO SHIPPING κ.ά.',
+    chartererCoop: 'Συνεργαζόμαστε με κορυφαίους Ναυλωτές όπως:',
+    chartererList: [
+      'OLDENDORFF · TATA · PACIFIC BASIN · WESTERN BULK · TONGLI · G2 OCEAN',
+      'NORDEN · HYUNDAI GLOVIS · MUR · LOUIS DREYFUS COMPANY · BAINBRIDGE',
+      'TEAMBULK · DAIFU · PROPEL · PANOCEAN · BULK ASIA · XO SHIPPING · κ.ά.',
+    ],
     envStrategy: 'Σε συμφωνία με την Περιβαλλοντική μας στρατηγική για χαμηλότερη κατανάλωση καυσίμων και συμμόρφωση πέραν των κανονιστικών απαιτήσεων, επενδύουμε σε σύγχρονα πλοία φιλικής τεχνολογίας Tier III.',
 
     ourFleet: 'Ο Στόλος μας',

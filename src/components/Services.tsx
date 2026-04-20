@@ -62,9 +62,19 @@ export default function Services() {
           <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-3 reveal hidden sm:block" style={{ transitionDelay: "250ms" }}>
             {t.servicesIntro}
           </p>
-          <p className="font-raleway sm:text-xs md:text-sm text-[hsl(208_80%_18%)] max-w-2xl mx-auto leading-relaxed sm:mb-2 reveal hidden sm:block font-medium" style={{ transitionDelay: "300ms" }}>
-            {t.chartererCoop}
-          </p>
+          <div className="max-w-3xl mx-auto sm:mb-2 reveal hidden sm:block" style={{ transitionDelay: "300ms" }}>
+            <p className="font-raleway sm:text-xs md:text-sm text-[hsl(208_80%_18%)] leading-relaxed font-medium mb-1.5">
+              {t.chartererCoop}
+            </p>
+            {t.chartererList.map((line, i) => (
+              <p
+                key={i}
+                className="font-raleway text-[10px] sm:text-[11px] md:text-xs text-[hsl(215_15%_45%)] leading-relaxed tracking-wide"
+              >
+                {line}
+              </p>
+            ))}
+          </div>
           <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-4 reveal hidden sm:block italic" style={{ transitionDelay: "350ms" }}>
             {t.envStrategy}
           </p>
