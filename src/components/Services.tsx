@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Wrench, Users, BarChart3, Shield, Award, FileCheck, Globe, Anchor, Star, BadgeCheck, ShieldCheck, Scale, X, Download, ChevronDown } from "lucide-react";
+import { Wrench, Users, BarChart3, Shield, Award, FileCheck, Globe, Anchor, Star, BadgeCheck, ShieldCheck, Scale, X, Download, ChevronDown, ArrowUpRight } from "lucide-react";
 import { useI18n } from "@/i18n";
 
 export default function Services() {
   const { t } = useI18n();
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
   const [showPsc, setShowPsc] = useState(false);
   const [showVision, setShowVision] = useState(false);
   const [showCert, setShowCert] = useState(false);
@@ -155,13 +155,22 @@ export default function Services() {
                   {current.credentials.map((c) => {
                     const CIcon = c.icon;
                     const hasCert = "cert" in c && !!c.cert;
-                    const baseClass = "flex items-center gap-2.5 py-2.5 px-5 bg-[hsl(208_80%_18%)] rounded-sm transition-colors";
+                    const baseClass = "flex items-center gap-2.5 py-2.5 px-5 rounded-sm transition-all duration-200";
+                    const staticClass = `${baseClass} bg-[hsl(208_80%_18%)]`;
+                    const clickableClass = `${baseClass} bg-[hsl(208_74%_42%)] ring-1 ring-[hsl(208_74%_65%)]/40 hover:bg-[hsl(208_74%_48%)] hover:ring-[hsl(208_74%_75%)] hover:-translate-y-0.5 hover:shadow-[0_4px_14px_rgba(74,159,229,0.35)] cursor-pointer group`;
                     const inner = (
                       <>
-                        <CIcon size={14} strokeWidth={1.5} className="text-[hsl(208_74%_65%)]" />
-                        <span className="font-raleway text-[12px] tracking-[0.05em] uppercase text-white/90 font-medium">
+                        <CIcon size={14} strokeWidth={1.5} className={hasCert ? "text-white" : "text-[hsl(208_74%_65%)]"} />
+                        <span className={`font-raleway text-[12px] tracking-[0.05em] uppercase font-medium ${hasCert ? "text-white" : "text-white/90"}`}>
                           {c.text}
                         </span>
+                        {hasCert && (
+                          <ArrowUpRight
+                            size={13}
+                            strokeWidth={2}
+                            className="text-white/80 -mr-1 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          />
+                        )}
                       </>
                     );
                     return hasCert ? (
@@ -169,13 +178,13 @@ export default function Services() {
                         key={c.text}
                         type="button"
                         onClick={() => setShowCert(true)}
-                        className={`${baseClass} hover:bg-[hsl(208_80%_24%)] cursor-pointer`}
+                        className={clickableClass}
                         aria-label={`View ${c.text} certificate`}
                       >
                         {inner}
                       </button>
                     ) : (
-                      <div key={c.text} className={baseClass}>{inner}</div>
+                      <div key={c.text} className={staticClass}>{inner}</div>
                     );
                   })}
                 </div>
@@ -184,11 +193,23 @@ export default function Services() {
               <div className="flex flex-col gap-3 min-w-[160px]">
                 {[current.credentials[0], current.credentials[1]].map((s) => {
                   const hasCert = "cert" in s && !!s.cert;
-                  const cardStyle = { background: "hsl(208 80% 18%)", borderRadius: "3px" };
+                  const staticStyle = { background: "hsl(208 80% 18%)", borderRadius: "3px" };
+                  const clickableStyle = {
+                    background: "hsl(208 74% 42%)",
+                    borderRadius: "3px",
+                    boxShadow: "0 0 0 1px hsl(208 74% 65% / 0.4)",
+                  };
                   const inner = (
                     <>
-                      <s.icon size={18} strokeWidth={1.5} className="text-[hsl(208_74%_65%)] mx-auto mb-2" />
-                      <p className="font-raleway font-medium text-xs text-white/80 tracking-wide">{s.text}</p>
+                      {hasCert && (
+                        <ArrowUpRight
+                          size={14}
+                          strokeWidth={2}
+                          className="absolute top-2 right-2 text-white/70 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                        />
+                      )}
+                      <s.icon size={18} strokeWidth={1.5} className={`mx-auto mb-2 ${hasCert ? "text-white" : "text-[hsl(208_74%_65%)]"}`} />
+                      <p className={`font-raleway font-medium text-xs tracking-wide ${hasCert ? "text-white" : "text-white/80"}`}>{s.text}</p>
                     </>
                   );
                   return hasCert ? (
@@ -196,14 +217,14 @@ export default function Services() {
                       key={s.text}
                       type="button"
                       onClick={() => setShowCert(true)}
-                      className="p-4 lg:p-5 text-center transition-colors hover:brightness-125 cursor-pointer"
-                      style={cardStyle}
+                      className="relative p-4 lg:p-5 text-center transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 cursor-pointer group"
+                      style={clickableStyle}
                       aria-label={`View ${s.text} certificate`}
                     >
                       {inner}
                     </button>
                   ) : (
-                    <div key={s.text} className="p-4 lg:p-5 text-center" style={cardStyle}>
+                    <div key={s.text} className="relative p-4 lg:p-5 text-center" style={staticStyle}>
                       {inner}
                     </div>
                   );
@@ -277,19 +298,24 @@ export default function Services() {
                     {s.credentials.map((c) => {
                       const CIcon = c.icon;
                       const hasCert = "cert" in c && !!c.cert;
-                      const base = "flex items-center gap-0.5 min-[390px]:gap-1 py-0.5 px-1.5 min-[390px]:px-2 min-[430px]:py-1 min-[430px]:px-2.5 bg-[hsl(208_80%_18%)] rounded-sm";
+                      const baseLayout = "flex items-center gap-0.5 min-[390px]:gap-1 py-0.5 px-1.5 min-[390px]:px-2 min-[430px]:py-1 min-[430px]:px-2.5 rounded-sm";
+                      const staticBg = `${baseLayout} bg-[hsl(208_80%_18%)]`;
+                      const clickableBg = `${baseLayout} bg-[hsl(208_74%_42%)] ring-1 ring-[hsl(208_74%_65%)]/50 active:brightness-125`;
                       const inner = (
                         <>
-                          <CIcon size={7} strokeWidth={1.5} className="text-[hsl(208_74%_65%)] min-[390px]:w-2 min-[390px]:h-2 min-[430px]:w-2.5 min-[430px]:h-2.5" />
-                          <span className="font-raleway text-[6px] min-[390px]:text-[7px] min-[430px]:text-[8px] tracking-[0.03em] uppercase text-white/90 font-medium">{c.text}</span>
+                          <CIcon size={7} strokeWidth={1.5} className={`min-[390px]:w-2 min-[390px]:h-2 min-[430px]:w-2.5 min-[430px]:h-2.5 ${hasCert ? "text-white" : "text-[hsl(208_74%_65%)]"}`} />
+                          <span className={`font-raleway text-[6px] min-[390px]:text-[7px] min-[430px]:text-[8px] tracking-[0.03em] uppercase font-medium ${hasCert ? "text-white" : "text-white/90"}`}>{c.text}</span>
+                          {hasCert && (
+                            <ArrowUpRight size={8} strokeWidth={2} className="text-white/90 -mr-0.5 min-[390px]:w-2 min-[390px]:h-2 min-[430px]:w-2.5 min-[430px]:h-2.5" />
+                          )}
                         </>
                       );
                       return hasCert ? (
-                        <button key={c.text} type="button" onClick={() => setShowCert(true)} className={`${base} active:brightness-125`} aria-label={`View ${c.text} certificate`}>
+                        <button key={c.text} type="button" onClick={() => setShowCert(true)} className={clickableBg} aria-label={`View ${c.text} certificate`}>
                           {inner}
                         </button>
                       ) : (
-                        <div key={c.text} className={base}>{inner}</div>
+                        <div key={c.text} className={staticBg}>{inner}</div>
                       );
                     })}
                   </div>
