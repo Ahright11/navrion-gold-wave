@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
 
           {/* Right — Google Maps */}
-          <div className="rounded-sm overflow-hidden h-[180px] min-[390px]:h-[200px] sm:h-[240px] md:h-full md:min-h-[280px]" style={{ border: '1px solid hsl(210 15% 88%)' }}>
+          <div className="rounded-sm overflow-hidden h-[130px] min-[390px]:h-[150px] sm:h-[190px] md:h-full md:min-h-[280px]" style={{ border: '1px solid hsl(210 15% 88%)' }}>
             <iframe
               src="https://maps.google.com/maps?q=37.941568,23.642267&z=17&output=embed"
               width="100%"
