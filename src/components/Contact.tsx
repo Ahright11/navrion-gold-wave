@@ -22,7 +22,7 @@ export default function Contact() {
           aria-hidden
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: "blur(8px) saturate(0.95)", transform: "scale(1.06)" }}
+          style={{ filter: "blur(4px) saturate(0.95)", transform: "scale(1.04)" }}
         />
         {/* Light wash so text stays readable */}
         <div className="absolute inset-0" style={{ background: "rgba(240, 244, 249, 0.55)" }} />
