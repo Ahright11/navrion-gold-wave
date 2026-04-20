@@ -329,14 +329,14 @@ export default function PortsMap() {
           background: hsl(208 80% 18%) !important;
         }
         .leaflet-container {
-          cursor: grab !important;
+          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><g fill='none' stroke='%23000' stroke-opacity='0.55' stroke-width='3' stroke-linecap='round'><circle cx='12' cy='12' r='7'/><path d='M12 2v4M12 18v4M2 12h4M18 12h4'/></g><g fill='none' stroke='white' stroke-width='1.1' stroke-linecap='round'><circle cx='12' cy='12' r='7'/><path d='M12 2v4M12 18v4M2 12h4M18 12h4'/></g><circle cx='12' cy='12' r='1' fill='white'/></svg>") 12 12, crosshair !important;
           background: hsl(208 80% 8%);
         }
         .leaflet-container:active {
           cursor: grabbing !important;
         }
         .leaflet-interactive {
-          cursor: pointer !important;
+          cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><g fill='none' stroke='%23000' stroke-opacity='0.6' stroke-width='3' stroke-linecap='round'><circle cx='12' cy='12' r='5.5'/><path d='M12 4v3M12 17v3M4 12h3M17 12h3'/></g><g fill='none' stroke='%234A9FE5' stroke-width='1.3' stroke-linecap='round'><circle cx='12' cy='12' r='5.5'/><path d='M12 4v3M12 17v3M4 12h3M17 12h3'/></g><circle cx='12' cy='12' r='1.5' fill='%234A9FE5'/></svg>") 12 12, pointer !important;
         }
       `}</style>
     </section>
