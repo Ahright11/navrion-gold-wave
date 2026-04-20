@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, MapPin, Phone, Mail } from 'lucide-react';
 import { useI18n } from '@/i18n';
-import LangToggle from './LangToggle';
 
 interface NavbarProps {
   dark?: boolean;
@@ -60,11 +59,6 @@ export default function Navbar({ dark = false, current = 0, onNavigate }: Navbar
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${bg}`}>
         <div className="container mx-auto flex items-center justify-center h-14 sm:h-16 md:h-[4.5rem] px-4 sm:px-6 lg:px-8">
-          {/* Left — language toggle */}
-          <div className="absolute left-4 sm:left-6 lg:left-8">
-            <LangToggle dark={dark} />
-          </div>
-
           {/* Center — logo */}
           <a
             href="#"
@@ -121,16 +115,13 @@ export default function Navbar({ dark = false, current = 0, onNavigate }: Navbar
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </a>
-            <div className="flex items-center gap-3 sm:gap-4">
-              <LangToggle dark />
-              <button
-                onClick={handleClose}
-                className="text-white/70 hover:text-white transition-colors duration-200 p-1.5"
-                aria-label="Close menu"
-              >
-                <X size={24} strokeWidth={1.5} />
-              </button>
-            </div>
+            <button
+              onClick={handleClose}
+              className="text-white/70 hover:text-white transition-colors duration-200 p-1.5"
+              aria-label="Close menu"
+            >
+              <X size={24} strokeWidth={1.5} />
+            </button>
           </div>
 
           {/* Center — nav links */}
