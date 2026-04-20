@@ -6,7 +6,6 @@ import { useI18n } from "@/i18n";
 export default function About() {
   const { t } = useI18n();
   const [showPsc, setShowPsc] = useState(false);
-  const [showCert, setShowCert] = useState(false);
 
   return (
     <section id="about" className="relative h-full flex flex-col justify-center overflow-hidden">
@@ -58,59 +57,11 @@ export default function About() {
 
         {/* Cert strip */}
         <div className="flex flex-wrap justify-center gap-x-3 min-[390px]:gap-x-4 sm:gap-x-6 md:gap-x-8 mt-5 min-[390px]:mt-6 sm:mt-8 md:mt-10 reveal" style={{ transitionDelay: '550ms' }}>
-          <button
-            onClick={() => setShowCert(true)}
-            className="font-raleway text-[7px] min-[390px]:text-[8px] sm:text-[9px] md:text-[10px] tracking-[0.12em] uppercase text-white/30 hover:text-[hsl(208_74%_65%)] transition-colors cursor-pointer"
-          >
-            ISO 9001:2015 →
-          </button>
-          {["Bureau Veritas", "RightShip 5/5", "INTERCARGO", "GARD P&I"].map((c) => (
+          {["ISO 9001:2015", "Bureau Veritas", "RightShip 5/5", "INTERCARGO", "GARD P&I"].map((c) => (
             <span key={c} className="font-raleway text-[7px] min-[390px]:text-[8px] sm:text-[9px] md:text-[10px] tracking-[0.12em] uppercase text-white/20">{c}</span>
           ))}
         </div>
       </div>
-
-      {/* ISO 9001 Certificate Modal */}
-      {showCert && (
-        <div
-          className="fixed inset-0 z-[200] flex items-center justify-center"
-          style={{ backgroundColor: "rgba(5, 15, 30, 0.92)", backdropFilter: "blur(8px)" }}
-          onClick={() => setShowCert(false)}
-        >
-          <div
-            className="relative w-full max-w-3xl mx-4 sm:mx-6 max-h-[90vh] flex flex-col"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setShowCert(false)}
-              className="absolute -top-10 right-0 text-white/70 hover:text-white transition-colors"
-              aria-label="Close"
-            >
-              <X size={22} strokeWidth={1.5} />
-            </button>
-            <iframe
-              src="/iso-9001-certificate.pdf#view=FitH&toolbar=0"
-              title="ISO 9001:2015 Certificate — Bureau Veritas"
-              className="w-full flex-1 rounded-sm bg-white"
-              style={{ minHeight: "60vh" }}
-            />
-            <div className="mt-4 flex items-center justify-between gap-3">
-              <p className="font-raleway text-xs sm:text-sm text-white/50">
-                <span className="text-white font-medium">ISO 9001:2015</span> — Bureau Veritas · Cert No. GR005631 · Valid to 20-04-2028
-              </p>
-              <a
-                href="/iso-9001-certificate.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white font-raleway text-xs tracking-wider uppercase hover:bg-white/20 transition-colors rounded-sm shrink-0"
-              >
-                <Download size={14} strokeWidth={1.5} />
-                PDF
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* PSC Modal */}
       {showPsc && (
