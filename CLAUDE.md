@@ -24,12 +24,19 @@ Boutique ship-management site for **NEW VISION SHIPPING S.A.** (NV), built in Vi
 - `.htaccess` lives in `public/.htaccess` so it ships every build. Contains the SPA rewrite rules — without it, deep links 404.
 - AutoSSL was triggered once; re-run in cPanel → SSL/TLS Status if HTTPS is missing.
 
-### nvshipping.com (production)
-- **Still WordPress**, untouched. Don't overwrite `public_html/` on the apex — that's the live customer site.
+### nvshipping.com (production — React build, NOT WordPress anymore)
+- React cutover happened ~2026-04-21. WordPress files still coexist in `public_html/` but Apache serves `index.html` (React) over `index.php` (WordPress). Don't `--delete` on lftp mirror — leave the WP files alone.
+- Deploy by changing the lftp target from `public_html/preview/` to `public_html/`. Same build, different folder. See `DEPLOY.md`.
+- Until 2026-05-05 the apex was frozen at the Apr 21 build; preview was the only active deploy target. As of 2026-05-05 the apex is back in sync with `main`.
 
 ### GitHub
-- Remote: `Ahright11/navrion-gold-wave` (branch: `main`). Push is `gh auth setup-git` + `git push origin main`.
+- Remote: `Ahright11/nvshipping` (renamed from `navrion-gold-wave` on 2026-05-05). Branch: `main`. Old URL still redirects.
 - No CI / auto-deploy — FTP mirror is manual.
+
+### Project docs (read these too)
+- `DEPLOY.md` — step-by-step deploy procedures for preview + production.
+- `COLLAB.md` — two-person workflow, credentials approach, branch rules.
+- `CHANGELOG.md` — append a line every deploy.
 
 ## Architecture notes
 - Single-page with `useFullPage` hook (`src/hooks/useFullPage.ts`) driving section-snap on desktop; normal scroll on mobile (<768px).
