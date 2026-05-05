@@ -19,11 +19,16 @@
     <meta property="og:url" content="https://nvshipping.com" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="New Vision Shipping S.A." />
+    <meta property="og:image" content="https://nvshipping.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="New Vision Shipping bulk carrier at sea" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="New Vision Shipping S.A. — Boutique Ship Management" />
     <meta name="twitter:description" content="Boutique shipmanagement from Piraeus, Greece. Ultramax & Supramax bulk carriers. RightShip 5/5." />
+    <meta name="twitter:image" content="https://nvshipping.com/og-image.jpg" />
 
     <!-- Geo -->
     <meta name="geo.region" content="GR-I" />
@@ -33,10 +38,14 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "LocalBusiness",
+      "@id": "https://nvshipping.com/#organization",
       "name": "New Vision Shipping S.A.",
+      "alternateName": "NV Shipping",
       "url": "https://nvshipping.com",
-      "description": "Boutique shipmanagement company operating from Piraeus, Greece. Managing Ultramax and Supramax bulk carriers.",
+      "logo": "https://nvshipping.com/nv-logo.png",
+      "image": "https://nvshipping.com/og-image.jpg",
+      "description": "Boutique shipmanagement company operating from Piraeus, Greece. Commercial, technical and crew management for Ultramax and Supramax bulk carriers. ISO 9001:2015 certified, RightShip 5/5 rated, INTERCARGO member.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Ionian Building, Akti Miaouli & 2, II Merarchias str.",
@@ -44,11 +53,27 @@
         "postalCode": "18535",
         "addressCountry": "GR"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.9405,
+        "longitude": 23.6429
+      },
       "telephone": "+302110130400",
       "email": "info@nvshipping.com",
+      "areaServed": "Worldwide",
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }],
       "memberOf": [
         { "@type": "Organization", "name": "INTERCARGO" },
         { "@type": "Organization", "name": "GARD P&I Club" }
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "name": "ISO 9001:2015", "credentialCategory": "certification", "recognizedBy": { "@type": "Organization", "name": "Bureau Veritas" } },
+        { "@type": "EducationalOccupationalCredential", "name": "RightShip 5/5", "credentialCategory": "rating" }
       ]
     }
     </script>
