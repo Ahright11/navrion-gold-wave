@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="white"/>
+  <rect x="2" y="2" width="96" height="96" fill="none" stroke="#1B5FAE" stroke-width="3"/>
+  <polygon points="3,3 97,3 50,50" fill="#1B5FAE"/>
+  <polygon points="3,97 97,97 50,50" fill="#1B5FAE"/>
+  <text x="24" y="65" font-family="Arial Black, Impact, Helvetica, sans-serif" font-weight="900" font-size="44" fill="#1B5FAE" stroke="#1B5FAE" stroke-width="2.5" paint-order="stroke fill" text-anchor="middle">N</text>
+  <text x="76" y="65" font-family="Arial Black, Impact, Helvetica, sans-serif" font-weight="900" font-size="44" fill="#1B5FAE" stroke="#1B5FAE" stroke-width="2.5" paint-order="stroke fill" text-anchor="middle">V</text>
+</svg>

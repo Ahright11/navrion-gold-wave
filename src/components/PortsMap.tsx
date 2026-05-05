@@ -262,7 +262,7 @@ export default function PortsMap() {
             Worldwide Trading
           </h2>
           <p className="font-raleway text-[10px] sm:text-sm md:text-base text-white/50 max-w-2xl mx-auto leading-relaxed reveal" style={{ transitionDelay: '250ms' }}>
-            Our Fleet has transported over 18,960,000 metric Tonnes of Cargo worldwide from/to the below ports:
+            Our Fleet has transported over 19,150,000 metric Tonnes of Cargo worldwide from/to the below ports:
           </p>
         </div>
 

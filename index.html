@@ -2,22 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navrion — Ship Management Excellence</title>
-    <meta name="description" content="Third-party ship management for bulk carriers worldwide. Technical, commercial and crew management from Piraeus, Greece." />
-    <meta name="author" content="Navrion" />
-    <link rel="canonical" href="https://navrion.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>New Vision Shipping S.A. — Boutique Ship Management, Piraeus</title>
+    <meta name="description" content="New Vision Shipping S.A. is a boutique shipmanagement company in Piraeus, Greece. Commercial, technical and crew management for bulk carriers. ISO 9001:2015 certified, RightShip 5/5 rated, INTERCARGO member." />
+    <meta name="author" content="New Vision Shipping S.A." />
+    <meta name="keywords" content="ship management, bulk carrier, Piraeus, Greece, commercial management, technical management, crew management, RightShip, INTERCARGO, ISO 9001, New Vision Shipping" />
+    <link rel="canonical" href="https://nvshipping.com" />
 
-    <meta property="og:title" content="Navrion — Ship Management Excellence" />
-    <meta property="og:description" content="Third-party ship management for bulk carriers worldwide. Technical, commercial and crew management from Piraeus, Greece." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="New Vision Shipping S.A. — Boutique Ship Management" />
+    <meta property="og:description" content="Boutique shipmanagement company operating from Piraeus. Managing Ultramax and Supramax bulk carriers with 5/5 RightShip rating." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://nvshipping.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="New Vision Shipping S.A." />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="New Vision Shipping S.A. — Boutique Ship Management" />
+    <meta name="twitter:description" content="Boutique shipmanagement from Piraeus, Greece. Ultramax & Supramax bulk carriers. RightShip 5/5." />
+
+    <!-- Geo -->
+    <meta name="geo.region" content="GR-I" />
+    <meta name="geo.placename" content="Piraeus" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "New Vision Shipping S.A.",
+      "url": "https://nvshipping.com",
+      "description": "Boutique shipmanagement company operating from Piraeus, Greece. Managing Ultramax and Supramax bulk carriers.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ionian Building, Akti Miaouli & 2, II Merarchias str.",
+        "addressLocality": "Piraeus",
+        "postalCode": "18535",
+        "addressCountry": "GR"
+      },
+      "telephone": "+302110130400",
+      "email": "info@nvshipping.com",
+      "memberOf": [
+        { "@type": "Organization", "name": "INTERCARGO" },
+        { "@type": "Organization", "name": "GARD P&I Club" }
+      ]
+    }
+    </script>
+    <!-- Google Analytics — uncomment and replace G-XXXXXXXXXX with real measurement ID
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
   </head>
 
   <body>
+    <div id="landscape-warn" style="position:fixed;inset:0;z-index:99999;flex-direction:column;align-items:center;justify-content:center;background:hsl(208 80% 8%);color:white;font-family:system-ui,sans-serif;">
+      <!-- Phone icon that rotates -->
+      <div style="margin-bottom:32px;animation:phone-rotate 2.5s ease-in-out infinite;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.8;">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2"/>
+        </svg>
+      </div>
+      <!-- Logo -->
+      <img src="/nv-logo.png" alt="" style="height:28px;filter:brightness(0) invert(1);opacity:0.3;margin-bottom:24px;" />
+      <!-- Text -->
+      <p style="font-size:17px;font-weight:600;letter-spacing:0.05em;margin:0 0 8px 0;opacity:0.9;">Rotate your device</p>
+      <p style="font-size:12px;opacity:0.35;margin:0;text-align:center;max-width:240px;line-height:1.5;">This website is designed for portrait viewing. Please rotate your phone to continue.</p>
+      <!-- Animated dots -->
+      <div style="display:flex;gap:6px;margin-top:28px;">
+        <span style="width:4px;height:4px;border-radius:50%;background:white;opacity:0.2;animation:dot-pulse 1.4s ease-in-out infinite;"></span>
+        <span style="width:4px;height:4px;border-radius:50%;background:white;opacity:0.2;animation:dot-pulse 1.4s ease-in-out 0.2s infinite;"></span>
+        <span style="width:4px;height:4px;border-radius:50%;background:white;opacity:0.2;animation:dot-pulse 1.4s ease-in-out 0.4s infinite;"></span>
+      </div>
+      <style>
+        @keyframes phone-rotate {
+          0%, 30% { transform: rotate(0deg); }
+          40%, 60% { transform: rotate(-90deg); }
+          70%, 100% { transform: rotate(0deg); }
+        }
+        @keyframes dot-pulse {
+          0%, 100% { opacity: 0.15; }
+          50% { opacity: 0.6; }
+        }
+      </style>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

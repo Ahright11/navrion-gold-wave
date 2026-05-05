@@ -10,10 +10,12 @@ export function useScrollReveal() {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.18 }
     );
 
-    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    document
+      .querySelectorAll(".reveal, .reveal-icon, .reveal-left, .reveal-right, .underline-draw")
+      .forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);

@@ -1,0 +1,1352 @@
+[
+  {
+    "port": "Kizomba A",
+    "country": "Angola",
+    "lat": -8.9074,
+    "lng": 13.1864
+  },
+  {
+    "port": "Luanda",
+    "country": "Angola",
+    "lat": -8.8614,
+    "lng": 13.2288
+  },
+  {
+    "port": "Newcastle (AU)",
+    "country": "Australia - N.S.W",
+    "lat": -32.9273,
+    "lng": 151.7813
+  },
+  {
+    "port": "Geelong",
+    "country": "Australia - Victo",
+    "lat": -38.1493,
+    "lng": 144.3598
+  },
+  {
+    "port": "Sitra",
+    "country": "Bahrain",
+    "lat": 26.1478,
+    "lng": 50.632
+  },
+  {
+    "port": "Chittagong",
+    "country": "Bangladesh",
+    "lat": 22.311,
+    "lng": 91.8029
+  },
+  {
+    "port": "Mongla",
+    "country": "Bangladesh",
+    "lat": 22.5149,
+    "lng": 89.5915
+  },
+  {
+    "port": "Payra",
+    "country": "Bangladesh",
+    "lat": 21.9888,
+    "lng": 90.2777
+  },
+  {
+    "port": "Barcarena",
+    "country": "Brazil",
+    "lat": -1.5108,
+    "lng": -48.6191
+  },
+  {
+    "port": "Rio Grande",
+    "country": "Brazil",
+    "lat": -25.8598,
+    "lng": -51.7005
+  },
+  {
+    "port": "Santos",
+    "country": "Brazil",
+    "lat": -23.9336,
+    "lng": -46.3286
+  },
+  {
+    "port": "Vancouver(CA)",
+    "country": "Canada - B.Columb",
+    "lat": 49.2609,
+    "lng": -123.114
+  },
+  {
+    "port": "Bayuquan",
+    "country": "China",
+    "lat": 40.27,
+    "lng": 122.13
+  },
+  {
+    "port": "Beilun",
+    "country": "China",
+    "lat": 29.87,
+    "lng": 121.87
+  },
+  {
+    "port": "Caofeidian 11 Terminal",
+    "country": "China",
+    "lat": 39.18,
+    "lng": 118.68
+  },
+  {
+    "port": "Changshu",
+    "country": "China",
+    "lat": 31.65,
+    "lng": 120.9
+  },
+  {
+    "port": "Dafeng",
+    "country": "China",
+    "lat": 33.2,
+    "lng": 120.82
+  },
+  {
+    "port": "Dandong",
+    "country": "China",
+    "lat": 39.95,
+    "lng": 124.35
+  },
+  {
+    "port": "DongFang",
+    "country": "China",
+    "lat": 19.1,
+    "lng": 108.65
+  },
+  {
+    "port": "Dongjiakou",
+    "country": "China",
+    "lat": 35.58,
+    "lng": 119.82
+  },
+  {
+    "port": "Fangcheng",
+    "country": "China",
+    "lat": 21.62,
+    "lng": 108.35
+  },
+  {
+    "port": "Guangzhou",
+    "country": "China",
+    "lat": 23.08,
+    "lng": 113.52
+  },
+  {
+    "port": "Huanghua",
+    "country": "China",
+    "lat": 38.37,
+    "lng": 117.48
+  },
+  {
+    "port": "Huludao",
+    "country": "China",
+    "lat": 40.72,
+    "lng": 120.98
+  },
+  {
+    "port": "Jiangyin",
+    "country": "China",
+    "lat": 31.92,
+    "lng": 120.28
+  },
+  {
+    "port": "Jingtang",
+    "country": "China",
+    "lat": 39.23,
+    "lng": 118.92
+  },
+  {
+    "port": "Jinzhou",
+    "country": "China",
+    "lat": 40.85,
+    "lng": 121.18
+  },
+  {
+    "port": "Lanqiao",
+    "country": "China",
+    "lat": 36.35,
+    "lng": 120.35
+  },
+  {
+    "port": "Lanshan",
+    "country": "China",
+    "lat": 35.08,
+    "lng": 119.32
+  },
+  {
+    "port": "Lianyungang",
+    "country": "China",
+    "lat": 34.75,
+    "lng": 119.45
+  },
+  {
+    "port": "Nanjing",
+    "country": "China",
+    "lat": 32.0438,
+    "lng": 118.7789
+  },
+  {
+    "port": "Nansha",
+    "country": "China",
+    "lat": 22.6359,
+    "lng": 113.6782
+  },
+  {
+    "port": "Ningbo",
+    "country": "China",
+    "lat": 29.8262,
+    "lng": 121.4584
+  },
+  {
+    "port": "Panjin",
+    "country": "China",
+    "lat": 41.1796,
+    "lng": 122.0524
+  },
+  {
+    "port": "Qidong (SUD)/ Nantong",
+    "country": "China",
+    "lat": 31.82,
+    "lng": 121.65
+  },
+  {
+    "port": "Qingdao",
+    "country": "China",
+    "lat": 36.07,
+    "lng": 120.38
+  },
+  {
+    "port": "Qinhuangdao",
+    "country": "China",
+    "lat": 39.93,
+    "lng": 119.62
+  },
+  {
+    "port": "Qinzhou",
+    "country": "China",
+    "lat": 21.68,
+    "lng": 108.62
+  },
+  {
+    "port": "Rizhao",
+    "country": "China",
+    "lat": 35.38,
+    "lng": 119.53
+  },
+  {
+    "port": "Shanghai - CJK",
+    "country": "China",
+    "lat": 31.38,
+    "lng": 121.5
+  },
+  {
+    "port": "Shidao",
+    "country": "China",
+    "lat": 36.88,
+    "lng": 122.42
+  },
+  {
+    "port": "Taicang",
+    "country": "China",
+    "lat": 31.6392,
+    "lng": 121.2113
+  },
+  {
+    "port": "Taizhou (Jiangsu)",
+    "country": "China",
+    "lat": 32.178,
+    "lng": 120.0466
+  },
+  {
+    "port": "Tianjin",
+    "country": "China",
+    "lat": 39.0,
+    "lng": 117.73
+  },
+  {
+    "port": "Waigaoqiao - CJK",
+    "country": "China",
+    "lat": 31.37,
+    "lng": 121.58
+  },
+  {
+    "port": "Weihai - North China Sea / Drifting",
+    "country": "China",
+    "lat": 37.5,
+    "lng": 122.12
+  },
+  {
+    "port": "Xingang (Tianjin)",
+    "country": "China",
+    "lat": 38.98,
+    "lng": 117.75
+  },
+  {
+    "port": "Yantai",
+    "country": "China",
+    "lat": 37.55,
+    "lng": 121.4
+  },
+  {
+    "port": "Zhenjiang",
+    "country": "China",
+    "lat": 32.1892,
+    "lng": 119.42
+  },
+  {
+    "port": "Zhoushan",
+    "country": "China",
+    "lat": 30.0,
+    "lng": 122.1
+  },
+  {
+    "port": "Zhuhai",
+    "country": "China",
+    "lat": 22.318,
+    "lng": 113.9514
+  },
+  {
+    "port": "Hong Kong",
+    "country": "China Hongkong",
+    "lat": 22.2793,
+    "lng": 114.1629
+  },
+  {
+    "port": "Moroni",
+    "country": "Comoros",
+    "lat": -11.7056,
+    "lng": 43.2488
+  },
+  {
+    "port": "Abidjan",
+    "country": "Cote d'Ivoire",
+    "lat": 5.2657,
+    "lng": -4.0113
+  },
+  {
+    "port": "Djibouti",
+    "country": "Djibouti",
+    "lat": 11.607,
+    "lng": 43.1355
+  },
+  {
+    "port": "Tadjoura",
+    "country": "Djibouti",
+    "lat": 11.7875,
+    "lng": 42.916
+  },
+  {
+    "port": "Adabiyah",
+    "country": "Egypt",
+    "lat": 29.9008,
+    "lng": 32.4569
+  },
+  {
+    "port": "Port Said",
+    "country": "Egypt",
+    "lat": 31.2467,
+    "lng": 32.2831
+  },
+  {
+    "port": "Safaga",
+    "country": "Egypt",
+    "lat": 26.7917,
+    "lng": 33.9344
+  },
+  {
+    "port": "Suez",
+    "country": "Egypt",
+    "lat": 30.4113,
+    "lng": 32.3323
+  },
+  {
+    "port": "Owendo",
+    "country": "Gabon",
+    "lat": 0.2965,
+    "lng": 9.4979
+  },
+  {
+    "port": "Gibraltar",
+    "country": "Gibraltar",
+    "lat": 36.154,
+    "lng": -5.3462
+  },
+  {
+    "port": "Conakry",
+    "country": "Guinea",
+    "lat": 9.5156,
+    "lng": -13.7166
+  },
+  {
+    "port": "Bedi",
+    "country": "India",
+    "lat": 22.5074,
+    "lng": 70.0321
+  },
+  {
+    "port": "Bhavnagar",
+    "country": "India",
+    "lat": 21.7583,
+    "lng": 72.2291
+  },
+  {
+    "port": "Chennai",
+    "country": "India",
+    "lat": 13.0964,
+    "lng": 80.3036
+  },
+  {
+    "port": "Cochin",
+    "country": "India",
+    "lat": 9.9648,
+    "lng": 76.2721
+  },
+  {
+    "port": "Dahej",
+    "country": "India",
+    "lat": 21.71,
+    "lng": 72.55
+  },
+  {
+    "port": "Dhamra",
+    "country": "India",
+    "lat": 20.8313,
+    "lng": 86.9639
+  },
+  {
+    "port": "Dharamtar Bandar",
+    "country": "India",
+    "lat": 18.68,
+    "lng": 73.08
+  },
+  {
+    "port": "Ennore",
+    "country": "India",
+    "lat": 13.2665,
+    "lng": 80.332
+  },
+  {
+    "port": "Gangavaram",
+    "country": "India",
+    "lat": 17.63,
+    "lng": 83.24
+  },
+  {
+    "port": "Goa",
+    "country": "India",
+    "lat": 15.3005,
+    "lng": 74.0855
+  },
+  {
+    "port": "Gopalpur",
+    "country": "India",
+    "lat": 19.2983,
+    "lng": 84.9534
+  },
+  {
+    "port": "Haldia",
+    "country": "India",
+    "lat": 22.03,
+    "lng": 88.06
+  },
+  {
+    "port": "Hazira",
+    "country": "India",
+    "lat": 21.0808,
+    "lng": 72.6355
+  },
+  {
+    "port": "Jaigarh",
+    "country": "India",
+    "lat": 17.3008,
+    "lng": 73.2019
+  },
+  {
+    "port": "Jakhau",
+    "country": "India",
+    "lat": 23.22,
+    "lng": 68.72
+  },
+  {
+    "port": "Kakinada",
+    "country": "India",
+    "lat": 16.94,
+    "lng": 82.25
+  },
+  {
+    "port": "Kandla",
+    "country": "India",
+    "lat": 23.0047,
+    "lng": 70.2163
+  },
+  {
+    "port": "Krishnapatnam",
+    "country": "India",
+    "lat": 14.25,
+    "lng": 80.13
+  },
+  {
+    "port": "Magdalla",
+    "country": "India",
+    "lat": 21.148,
+    "lng": 72.7657
+  },
+  {
+    "port": "Mangalore",
+    "country": "India",
+    "lat": 12.85,
+    "lng": 74.81
+  },
+  {
+    "port": "Marmagao",
+    "country": "India",
+    "lat": 15.4109,
+    "lng": 73.7927
+  },
+  {
+    "port": "Mumbai",
+    "country": "India",
+    "lat": 18.9448,
+    "lng": 72.8429
+  },
+  {
+    "port": "Mundra",
+    "country": "India",
+    "lat": 22.73,
+    "lng": 69.72
+  },
+  {
+    "port": "Navlakhi",
+    "country": "India",
+    "lat": 22.96,
+    "lng": 70.45
+  },
+  {
+    "port": "New Mangalore",
+    "country": "India",
+    "lat": 12.9298,
+    "lng": 74.8225
+  },
+  {
+    "port": "Okha (IN)",
+    "country": "India",
+    "lat": 22.4716,
+    "lng": 69.0765
+  },
+  {
+    "port": "Paradip",
+    "country": "India",
+    "lat": 20.27,
+    "lng": 86.63
+  },
+  {
+    "port": "Pipavav",
+    "country": "India",
+    "lat": 20.9253,
+    "lng": 71.4979
+  },
+  {
+    "port": "Porbandar",
+    "country": "India",
+    "lat": 21.639,
+    "lng": 69.5894
+  },
+  {
+    "port": "Tuticorin",
+    "country": "India",
+    "lat": 8.76,
+    "lng": 78.17
+  },
+  {
+    "port": "Visakhapatnam",
+    "country": "India",
+    "lat": 17.68,
+    "lng": 83.29
+  },
+  {
+    "port": "Vizag",
+    "country": "India",
+    "lat": 17.696,
+    "lng": 83.2929
+  },
+  {
+    "port": "Aceh",
+    "country": "Indonesia",
+    "lat": 4.3685,
+    "lng": 97.0253
+  },
+  {
+    "port": "Adang Bay",
+    "country": "Indonesia",
+    "lat": -1.7377,
+    "lng": 116.3478
+  },
+  {
+    "port": "Bahodopi",
+    "country": "Indonesia",
+    "lat": -2.79,
+    "lng": 122.1249
+  },
+  {
+    "port": "Balikpapan",
+    "country": "Indonesia",
+    "lat": -1.2576,
+    "lng": 116.9006
+  },
+  {
+    "port": "Bengkulu",
+    "country": "Indonesia",
+    "lat": -4.0035,
+    "lng": 101.8393
+  },
+  {
+    "port": "Bontang",
+    "country": "Indonesia",
+    "lat": 0.1646,
+    "lng": 117.4876
+  },
+  {
+    "port": "Bunati",
+    "country": "Indonesia",
+    "lat": -3.45,
+    "lng": 115.7
+  },
+  {
+    "port": "Bunyu",
+    "country": "Indonesia",
+    "lat": 3.52,
+    "lng": 117.8069
+  },
+  {
+    "port": "Cigading",
+    "country": "Indonesia",
+    "lat": -6.02,
+    "lng": 106.05
+  },
+  {
+    "port": "Ciwandan",
+    "country": "Indonesia",
+    "lat": -6.025,
+    "lng": 105.957
+  },
+  {
+    "port": "Gresik",
+    "country": "Indonesia",
+    "lat": -7.1556,
+    "lng": 112.6638
+  },
+  {
+    "port": "Makassar",
+    "country": "Indonesia",
+    "lat": -5.1221,
+    "lng": 119.4074
+  },
+  {
+    "port": "Merak",
+    "country": "Indonesia",
+    "lat": -5.9302,
+    "lng": 105.9968
+  },
+  {
+    "port": "Meulaboh",
+    "country": "Indonesia",
+    "lat": 4.1482,
+    "lng": 96.1339
+  },
+  {
+    "port": "MUARA BANYUASIN",
+    "country": "Indonesia",
+    "lat": -2.6538,
+    "lng": 104.8713
+  },
+  {
+    "port": "Muara Berau",
+    "country": "Indonesia",
+    "lat": 1.6864,
+    "lng": 117.1708
+  },
+  {
+    "port": "Muara Pantai",
+    "country": "Indonesia",
+    "lat": -1.7,
+    "lng": 116.1
+  },
+  {
+    "port": "Muara Sabak -",
+    "country": "Indonesia",
+    "lat": -1.1295,
+    "lng": 103.8609
+  },
+  {
+    "port": "Muara Satui",
+    "country": "Indonesia",
+    "lat": -3.4,
+    "lng": 115.85
+  },
+  {
+    "port": "Nunukan",
+    "country": "Indonesia",
+    "lat": 3.9075,
+    "lng": 117.0424
+  },
+  {
+    "port": "Padang",
+    "country": "Indonesia",
+    "lat": -2.6075,
+    "lng": 140.6478
+  },
+  {
+    "port": "Samarinda",
+    "country": "Indonesia",
+    "lat": -0.5066,
+    "lng": 117.1536
+  },
+  {
+    "port": "Sangkulirang",
+    "country": "Indonesia",
+    "lat": 0.8484,
+    "lng": 118.0788
+  },
+  {
+    "port": "Taboneo",
+    "country": "Indonesia",
+    "lat": -3.55,
+    "lng": 114.85
+  },
+  {
+    "port": "Tanjung Buyut",
+    "country": "Indonesia",
+    "lat": -3.87,
+    "lng": 104.8
+  },
+  {
+    "port": "Tanjung Kampeh",
+    "country": "Indonesia",
+    "lat": -1.08,
+    "lng": 103.42
+  },
+  {
+    "port": "Tanjung Pemancingan",
+    "country": "Indonesia",
+    "lat": -8.4,
+    "lng": 114.35
+  },
+  {
+    "port": "Tanjung Pemancingan",
+    "country": "Indonesia",
+    "lat": -8.4,
+    "lng": 114.35
+  },
+  {
+    "port": "Tanjung Petang",
+    "country": "Indonesia",
+    "lat": -1.18,
+    "lng": 109.05
+  },
+  {
+    "port": "Tanjung Sepikat",
+    "country": "Indonesia",
+    "lat": -1.2,
+    "lng": 109.08
+  },
+  {
+    "port": "Hibikinada",
+    "country": "Japan",
+    "lat": 33.9419,
+    "lng": 130.7905
+  },
+  {
+    "port": "Kashima (Ibaraki)",
+    "country": "Japan",
+    "lat": 33.0947,
+    "lng": 130.1325
+  },
+  {
+    "port": "Mizushima",
+    "country": "Japan",
+    "lat": 34.5386,
+    "lng": 133.7413
+  },
+  {
+    "port": "Tachibana",
+    "country": "Japan",
+    "lat": 34.1775,
+    "lng": 132.807
+  },
+  {
+    "port": "Tsukumi",
+    "country": "Japan",
+    "lat": 33.0723,
+    "lng": 131.8613
+  },
+  {
+    "port": "Aqaba",
+    "country": "Jordan",
+    "lat": 29.5091,
+    "lng": 34.9971
+  },
+  {
+    "port": "Mombasa",
+    "country": "Kenya",
+    "lat": -4.07,
+    "lng": 39.68
+  },
+  {
+    "port": "Al Ahmadi",
+    "country": "Kuwait",
+    "lat": 24.7885,
+    "lng": 46.7946
+  },
+  {
+    "port": "Shuaiba",
+    "country": "Kuwait",
+    "lat": 29.0458,
+    "lng": 48.1187
+  },
+  {
+    "port": "Klaipeda",
+    "country": "Lithuania",
+    "lat": 55.7,
+    "lng": 21.13
+  },
+  {
+    "port": "Tamatave",
+    "country": "Madagascar",
+    "lat": -18.15,
+    "lng": 49.39
+  },
+  {
+    "port": "Kelang",
+    "country": "Malaysia",
+    "lat": 3.0,
+    "lng": 101.39
+  },
+  {
+    "port": "Pasir Gudang",
+    "country": "Malaysia",
+    "lat": 1.47,
+    "lng": 103.9
+  },
+  {
+    "port": "Penang",
+    "country": "Malaysia",
+    "lat": 5.42,
+    "lng": 100.35
+  },
+  {
+    "port": "Port Kelang",
+    "country": "Malaysia",
+    "lat": 3.0,
+    "lng": 101.39
+  },
+  {
+    "port": "Port Klang",
+    "country": "Malaysia",
+    "lat": 3.0,
+    "lng": 101.39
+  },
+  {
+    "port": "Samalaju",
+    "country": "Malaysia",
+    "lat": 2.8,
+    "lng": 111.6
+  },
+  {
+    "port": "Port Louis (MU)",
+    "country": "Mauritius",
+    "lat": -20.16,
+    "lng": 57.5
+  },
+  {
+    "port": "Jorf Lasfar",
+    "country": "Morocco",
+    "lat": 33.12,
+    "lng": -8.63
+  },
+  {
+    "port": "Beira",
+    "country": "Mozambique",
+    "lat": -19.84,
+    "lng": 34.87
+  },
+  {
+    "port": "Maputo",
+    "country": "Mozambique",
+    "lat": -25.97,
+    "lng": 32.58
+  },
+  {
+    "port": "Moma",
+    "country": "Mozambique",
+    "lat": -16.75,
+    "lng": 39.45
+  },
+  {
+    "port": "Nacala",
+    "country": "Mozambique",
+    "lat": -14.54,
+    "lng": 40.69
+  },
+  {
+    "port": "Rotterdam",
+    "country": "Netherlands",
+    "lat": 51.91,
+    "lng": 4.48
+  },
+  {
+    "port": "Dibba - UAE",
+    "country": "Oman",
+    "lat": 25.62,
+    "lng": 56.27
+  },
+  {
+    "port": "Duqm",
+    "country": "Oman",
+    "lat": 19.67,
+    "lng": 57.7
+  },
+  {
+    "port": "Khasab",
+    "country": "Oman",
+    "lat": 26.18,
+    "lng": 56.25
+  },
+  {
+    "port": "Salalah",
+    "country": "Oman",
+    "lat": 16.95,
+    "lng": 54.0
+  },
+  {
+    "port": "Sohar",
+    "country": "Oman",
+    "lat": 24.36,
+    "lng": 56.73
+  },
+  {
+    "port": "Sur (OM)",
+    "country": "Oman",
+    "lat": 22.57,
+    "lng": 59.53
+  },
+  {
+    "port": "Bin Qasim",
+    "country": "Pakistan",
+    "lat": 24.79,
+    "lng": 67.35
+  },
+  {
+    "port": "Karachi",
+    "country": "Pakistan",
+    "lat": 24.85,
+    "lng": 66.98
+  },
+  {
+    "port": "Balboa",
+    "country": "Panama",
+    "lat": 8.95,
+    "lng": -79.56
+  },
+  {
+    "port": "Cristobal",
+    "country": "Panama",
+    "lat": 9.35,
+    "lng": -79.9
+  },
+  {
+    "port": "Cebu",
+    "country": "Philippines",
+    "lat": 10.3,
+    "lng": 123.89
+  },
+  {
+    "port": "Iligan - (Kauswagan)",
+    "country": "Philippines",
+    "lat": 8.23,
+    "lng": 124.24
+  },
+  {
+    "port": "Laoag",
+    "country": "Philippines",
+    "lat": 18.2,
+    "lng": 120.59
+  },
+  {
+    "port": "Lingayen",
+    "country": "Philippines",
+    "lat": 16.02,
+    "lng": 120.23
+  },
+  {
+    "port": "Subic Bay",
+    "country": "Philippines",
+    "lat": 14.8,
+    "lng": 120.28
+  },
+  {
+    "port": "Mesaieed",
+    "country": "Qatar",
+    "lat": 24.98,
+    "lng": 51.55
+  },
+  {
+    "port": "Reunion port",
+    "country": "Reunion",
+    "lat": -20.94,
+    "lng": 55.29
+  },
+  {
+    "port": "Constanta",
+    "country": "Romania",
+    "lat": 44.17,
+    "lng": 28.66
+  },
+  {
+    "port": "Nakhodka",
+    "country": "Russia",
+    "lat": 42.81,
+    "lng": 132.87
+  },
+  {
+    "port": "Saint Petersburg",
+    "country": "Russia",
+    "lat": 59.93,
+    "lng": 30.18
+  },
+  {
+    "port": "Shakhtersk",
+    "country": "Russia",
+    "lat": 49.15,
+    "lng": 142.08
+  },
+  {
+    "port": "Vanino",
+    "country": "Russia",
+    "lat": 49.08,
+    "lng": 140.28
+  },
+  {
+    "port": "Vladivostok",
+    "country": "Russia",
+    "lat": 43.12,
+    "lng": 131.87
+  },
+  {
+    "port": "Dammam",
+    "country": "Saudi Arabia",
+    "lat": 26.43,
+    "lng": 50.1
+  },
+  {
+    "port": "Gizan",
+    "country": "Saudi Arabia",
+    "lat": 16.9,
+    "lng": 42.55
+  },
+  {
+    "port": "Jeddah",
+    "country": "Saudi Arabia",
+    "lat": 21.49,
+    "lng": 39.17
+  },
+  {
+    "port": "Jubail",
+    "country": "Saudi Arabia",
+    "lat": 27.01,
+    "lng": 49.66
+  },
+  {
+    "port": "Ras Al Khafji - (Ras Al Khair)",
+    "country": "Saudi Arabia",
+    "lat": 27.47,
+    "lng": 49.22
+  },
+  {
+    "port": "Yanbu",
+    "country": "Saudi Arabia",
+    "lat": 24.09,
+    "lng": 38.05
+  },
+  {
+    "port": "Dakar",
+    "country": "Senegal",
+    "lat": 14.6934,
+    "lng": -17.4479
+  },
+  {
+    "port": "Singapore",
+    "country": "Singapore",
+    "lat": 1.2812,
+    "lng": 103.7752
+  },
+  {
+    "port": "Cape Town",
+    "country": "South Africa",
+    "lat": -33.9128,
+    "lng": 18.4208
+  },
+  {
+    "port": "Coega",
+    "country": "South Africa",
+    "lat": -33.826,
+    "lng": 25.6427
+  },
+  {
+    "port": "Durban",
+    "country": "South Africa",
+    "lat": -29.8448,
+    "lng": 31.023
+  },
+  {
+    "port": "Port Elizabeth",
+    "country": "South Africa",
+    "lat": -33.9601,
+    "lng": 25.6243
+  },
+  {
+    "port": "Richards Bay",
+    "country": "South Africa",
+    "lat": -28.7708,
+    "lng": 32.0578
+  },
+  {
+    "port": "Saldanha Bay",
+    "country": "South Africa",
+    "lat": -33.009,
+    "lng": 17.9453
+  },
+  {
+    "port": "Busan",
+    "country": "South Korea",
+    "lat": -32.372,
+    "lng": 115.7477
+  },
+  {
+    "port": "Donghae",
+    "country": "South Korea",
+    "lat": 37.489,
+    "lng": 129.1246
+  },
+  {
+    "port": "Incheon",
+    "country": "South Korea",
+    "lat": 37.4677,
+    "lng": 126.6117
+  },
+  {
+    "port": "Kunsan - LT (UTC +9)",
+    "country": "South Korea",
+    "lat": 35.9719,
+    "lng": 126.5598
+  },
+  {
+    "port": "Kwangyang",
+    "country": "South Korea",
+    "lat": 33.5023,
+    "lng": 126.5297
+  },
+  {
+    "port": "Pohang",
+    "country": "South Korea",
+    "lat": 36.0514,
+    "lng": 129.3787
+  },
+  {
+    "port": "Yeosu",
+    "country": "South Korea",
+    "lat": 34.7382,
+    "lng": 127.7331
+  },
+  {
+    "port": "Algeciras",
+    "country": "Spain",
+    "lat": 36.13,
+    "lng": -5.44
+  },
+  {
+    "port": "Las Palmas",
+    "country": "Spain",
+    "lat": 28.14,
+    "lng": -15.43
+  },
+  {
+    "port": "Colombo",
+    "country": "Sri Lanka",
+    "lat": 6.94,
+    "lng": 79.84
+  },
+  {
+    "port": "Galle",
+    "country": "Sri Lanka",
+    "lat": 6.03,
+    "lng": 80.22
+  },
+  {
+    "port": "Trincomalee",
+    "country": "Sri Lanka",
+    "lat": 8.57,
+    "lng": 81.23
+  },
+  {
+    "port": "Goteborg",
+    "country": "Sweden",
+    "lat": 57.71,
+    "lng": 11.97
+  },
+  {
+    "port": "Hoping",
+    "country": "Taiwan",
+    "lat": 24.31,
+    "lng": 121.6
+  },
+  {
+    "port": "Kaohsiung",
+    "country": "Taiwan",
+    "lat": 22.62,
+    "lng": 120.27
+  },
+  {
+    "port": "Dar Es Salaam",
+    "country": "Tanzania",
+    "lat": -6.82,
+    "lng": 39.29
+  },
+  {
+    "port": "Mtwara",
+    "country": "Tanzania",
+    "lat": -10.27,
+    "lng": 40.19
+  },
+  {
+    "port": "Khanom",
+    "country": "Thailand",
+    "lat": 9.22,
+    "lng": 99.81
+  },
+  {
+    "port": "Ko Si Chang",
+    "country": "Thailand",
+    "lat": 13.16,
+    "lng": 100.81
+  },
+  {
+    "port": "Laem Chabang",
+    "country": "Thailand",
+    "lat": 13.08,
+    "lng": 100.88
+  },
+  {
+    "port": "Thasala",
+    "country": "Thailand",
+    "lat": 8.67,
+    "lng": 100.05
+  },
+  {
+    "port": "Isdemir",
+    "country": "Turkey",
+    "lat": 36.6,
+    "lng": 36.17
+  },
+  {
+    "port": "Istanbul",
+    "country": "Turkey",
+    "lat": 41.01,
+    "lng": 28.98
+  },
+  {
+    "port": "DIBBA UAE",
+    "country": "U.A.E",
+    "lat": 25.62,
+    "lng": 56.27
+  },
+  {
+    "port": "Fujairah",
+    "country": "U.A.E",
+    "lat": 25.12,
+    "lng": 56.34
+  },
+  {
+    "port": "Jebel Ali",
+    "country": "U.A.E",
+    "lat": 25.02,
+    "lng": 55.06
+  },
+  {
+    "port": "Khor Fakkan",
+    "country": "U.A.E",
+    "lat": 25.34,
+    "lng": 56.36
+  },
+  {
+    "port": "Mina Saqr",
+    "country": "U.A.E",
+    "lat": 25.67,
+    "lng": 56.22
+  },
+  {
+    "port": "Mina Zayed",
+    "country": "U.A.E",
+    "lat": 24.52,
+    "lng": 54.38
+  },
+  {
+    "port": "Port Khalifa",
+    "country": "U.A.E",
+    "lat": 24.53,
+    "lng": 54.65
+  },
+  {
+    "port": "Ruwais",
+    "country": "U.A.E",
+    "lat": 24.11,
+    "lng": 52.73
+  },
+  {
+    "port": "Sharjah",
+    "country": "U.A.E",
+    "lat": 25.36,
+    "lng": 55.39
+  },
+  {
+    "port": "Redcar",
+    "country": "U.K.",
+    "lat": 54.62,
+    "lng": -1.07
+  },
+  {
+    "port": "New Orleans",
+    "country": "U.S.A - Louisiana",
+    "lat": 29.95,
+    "lng": -90.06
+  },
+  {
+    "port": "Houston",
+    "country": "U.S.A - Texas",
+    "lat": 29.76,
+    "lng": -95.27
+  },
+  {
+    "port": "Cai Mep",
+    "country": "Vietnam",
+    "lat": 10.5,
+    "lng": 107.02
+  },
+  {
+    "port": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "lat": 10.76,
+    "lng": 106.66
+  },
+  {
+    "port": "Nghi Son",
+    "country": "Vietnam",
+    "lat": 19.42,
+    "lng": 105.82
+  },
+  {
+    "port": "Vung Tau",
+    "country": "Vietnam",
+    "lat": 10.35,
+    "lng": 107.08
+  }
+]

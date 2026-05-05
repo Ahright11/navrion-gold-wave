@@ -47,7 +47,7 @@ export default function Contact() {
         </div>
 
         {/* Two columns: info + map */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4 sm:gap-5 md:gap-8 reveal" style={{ transitionDelay: '400ms' }}>
+        <div className="grid grid-cols-1 md:grid-cols-[1.35fr_1fr] items-center gap-4 sm:gap-5 md:gap-8 reveal" style={{ transitionDelay: '400ms' }}>
           {/* Left — contact info */}
           <div className="flex flex-col justify-center">
             <p className="font-raleway text-xs sm:text-sm font-semibold text-[hsl(208_80%_18%)] mb-3">
@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
 
           {/* Right — Google Maps */}
-          <div className="rounded-sm overflow-hidden h-[150px] min-[390px]:h-[170px] sm:h-[200px] md:h-full md:min-h-[280px] max-w-[240px] min-[390px]:max-w-[260px] sm:max-w-[340px] md:max-w-none mx-auto w-full" style={{ border: '1px solid hsl(210 15% 88%)' }}>
+          <div className="rounded-sm overflow-hidden h-[115px] min-[390px]:h-[130px] sm:h-[150px] md:h-[170px] lg:h-[180px] max-w-[180px] min-[390px]:max-w-[200px] sm:max-w-[260px] md:max-w-[290px] lg:max-w-[320px] mx-auto w-full" style={{ border: '1px solid hsl(210 15% 88%)' }}>
             <iframe
               src="https://maps.google.com/maps?q=37.941568,23.642267&z=17&output=embed"
               width="100%"

@@ -31,6 +31,7 @@ const translations = {
     // Services
     ourServices: 'Our Services',
     fullFleet: 'Management Services',
+    servicesTagline: 'Safety, Efficiency, Excellence',
     companyIntro: 'NEW VISION SHIPPING S.A. (NV) is a boutique shipmanagement company operating from the center of the Piraeus global shipping hub, in the historical Ionian Building. Our expertise is the management of Bulk Carriers with high efficiency and accountability.',
     companyCerts: 'NV holds a steady 5/5 top rating with RightShip as a Manager of vessels throughout the years, is a Certified Ship Manager as per ISO 9001:2015 by Bureau Veritas, a member of GARD P&I Club, of RightShip and a full member of INTERCARGO, and runs the vessels under a DOC (Document of Compliance with the requirements of the International Safety Maritime code - ISM) by Bureau Veritas.',
     companyPsc: 'Our commitment to excellence has placed us in the Top 10 Port State Control Performers Worldwide in our sector: New Vision has been ranked number 8 in 2025 basis data of the last 3 years, according to',
@@ -40,7 +41,7 @@ const translations = {
     companyTeam: "NV's management and executives have decades of experience and in-depth knowledge of the shipping industry and strong relations with industry's key players, which guarantee competent and reliable support to all its customers and business associates. These individuals have combined powers under a 'New Vision' for a model ship management company of the highest standards and efficiency in strict and up-to-date conformity with international rules and regulations.",
     commercial: 'Commercial Management',
     commercialSub: 'Chartering · S&P · Operations',
-    commercialDesc: 'Full commercial management from our Piraeus headquarters — chartering with direct access to major global charterers, Sale & Purchase advisory, voyage optimization, and transparent P&L reporting on every fixture.',
+    commercialDesc: 'Full commercial management from our Piraeus headquarters — chartering with direct access to major global charterers, Sale & Purchase advisory, voyage optimization, and transparent P&L reporting on every fixture. Our experienced Commercial Management Team targets the optimization of vessel profitability to maximize the Owners\u2019 benefit — we further offer Insurance cover at most competitive rates, Claims handling, Post fixture and freight collection.',
     technical: 'Technical Management',
     technicalSub: 'Maintenance · Class · Dry-docking',
     technicalDesc: 'In-house superintendents running proactive planned maintenance across the fleet. Certified Ship Manager per ISO 9001:2015 by Bureau Veritas, operating under full DOC compliance with the ISM Code. DNV and ClassNK classed vessels.',
@@ -55,6 +56,8 @@ const translations = {
       'TEAMBULK · DAIFU · PROPEL · PANOCEAN · BULK ASIA · XO SHIPPING · etc.',
     ],
     envStrategy: 'In line with our Environmental strategy for lower fuel consumption and \'over and above\' regulatory compliance, we are investing in modern Tier III eco-friendly technology vessels.',
+    safetyCulture: 'Furthermore we remain committed and invested in our Safety & Health culture. This is not just a declaration, but a daily practice for us, backed up by our impeccable record.',
+    trustValue: 'Above all, Trust is our core value. Operating in all aspects with a strict Business Ethics Policy is non-negotiable, and our highest reward is our Clients\u2019 and Partners\u2019 Trust.',
 
     // Fleet
     ourFleet: 'Our Fleet',
@@ -96,6 +99,7 @@ const translations = {
 
     ourServices: 'Οι Υπηρεσίες μας',
     fullFleet: 'Υπηρεσίες Διαχείρισης',
+    servicesTagline: 'Ασφάλεια, Αποτελεσματικότητα, Αριστεία',
     companyIntro: 'Η NEW VISION SHIPPING S.A. (NV) είναι μια boutique εταιρεία διαχείρισης πλοίων που λειτουργεί από το κέντρο του παγκόσμιου ναυτιλιακού κόμβου του Πειραιά, στο ιστορικό κτίριο Ionian Building. Η εξειδίκευσή μας είναι η διαχείριση Bulk Carriers με υψηλή αποδοτικότητα και αξιοπιστία.',
     companyCerts: 'Η NV διατηρεί σταθερή αξιολόγηση 5/5 στο RightShip ως Διαχειριστής πλοίων, είναι Πιστοποιημένος Διαχειριστής Πλοίων κατά ISO 9001:2015 από τον Bureau Veritas, μέλος του GARD P&I Club, του RightShip και πλήρες μέλος του INTERCARGO, και λειτουργεί τα πλοία υπό DOC (Document of Compliance με τον Διεθνή Κώδικα Ασφαλούς Διαχείρισης - ISM) από τον Bureau Veritas.',
     companyPsc: 'Η δέσμευσή μας στην αριστεία μας έχει τοποθετήσει στο Top 10 Port State Control Performers Παγκοσμίως στον τομέα μας: Η New Vision κατατάχθηκε στη θέση 8 το 2025 βάσει δεδομένων των τελευταίων 3 ετών, σύμφωνα με την',
@@ -105,7 +109,7 @@ const translations = {
     companyTeam: 'Η διοίκηση και τα στελέχη της NV διαθέτουν δεκαετίες εμπειρίας και εις βάθος γνώση της ναυτιλιακής βιομηχανίας και ισχυρές σχέσεις με βασικούς παράγοντες του κλάδου, που εγγυώνται ικανή και αξιόπιστη υποστήριξη σε όλους τους πελάτες και συνεργάτες. Αυτά τα άτομα έχουν ενώσει τις δυνάμεις τους υπό ένα «New Vision» για μια πρότυπη εταιρεία διαχείρισης πλοίων των υψηλότερων προτύπων.',
     commercial: 'Εμπορική Διαχείριση',
     commercialSub: 'Ναυλώσεις · S&P · Λειτουργίες',
-    commercialDesc: 'Πλήρης εμπορική διαχείριση από τα κεντρικά μας στον Πειραιά — ναυλώσεις με άμεση πρόσβαση σε μεγάλους ναυλωτές παγκοσμίως, συμβουλές Sale & Purchase, βελτιστοποίηση ταξιδιών και διαφανής αναφορά P&L.',
+    commercialDesc: 'Πλήρης εμπορική διαχείριση από τα κεντρικά μας στον Πειραιά — ναυλώσεις με άμεση πρόσβαση σε μεγάλους ναυλωτές παγκοσμίως, συμβουλές Sale & Purchase, βελτιστοποίηση ταξιδιών και διαφανής αναφορά P&L. Η έμπειρη Ομάδα Εμπορικής Διαχείρισης στοχεύει στη βελτιστοποίηση της κερδοφορίας του πλοίου για μέγιστο όφελος του Πλοιοκτήτη — προσφέρουμε επιπλέον Ασφαλιστική Κάλυψη με τις πιο ανταγωνιστικές τιμές, διαχείριση Claims, Post fixture και freight collection.',
     technical: 'Τεχνική Διαχείριση',
     technicalSub: 'Συντήρηση · Κλάση · Δεξαμενισμός',
     technicalDesc: 'Εσωτερικοί επιθεωρητές με προληπτική συντήρηση σε όλο τον στόλο. Πιστοποιημένος Διαχειριστής Πλοίων κατά ISO 9001:2015 από Bureau Veritas, με πλήρη συμμόρφωση DOC με τον Κώδικα ISM.',
@@ -120,6 +124,8 @@ const translations = {
       'TEAMBULK · DAIFU · PROPEL · PANOCEAN · BULK ASIA · XO SHIPPING · κ.ά.',
     ],
     envStrategy: 'Σε συμφωνία με την Περιβαλλοντική μας στρατηγική για χαμηλότερη κατανάλωση καυσίμων και συμμόρφωση πέραν των κανονιστικών απαιτήσεων, επενδύουμε σε σύγχρονα πλοία φιλικής τεχνολογίας Tier III.',
+    safetyCulture: 'Επιπλέον παραμένουμε δεσμευμένοι και επενδυμένοι στην κουλτούρα Ασφάλειας & Υγείας. Δεν είναι απλή δήλωση, αλλά καθημερινή πρακτική για εμάς, υποστηριζόμενη από ένα άψογο ιστορικό.',
+    trustValue: 'Πάνω από όλα, η Εμπιστοσύνη είναι η θεμελιώδης αξία μας. Η λειτουργία μας υπό αυστηρή Πολιτική Επιχειρηματικής Δεοντολογίας είναι μη διαπραγματεύσιμη, και η μεγαλύτερή μας ανταμοιβή είναι η Εμπιστοσύνη των Πελατών και Συνεργατών μας.',
 
     ourFleet: 'Ο Στόλος μας',
     vesselsUnder: 'Πλοία υπό διαχείριση',

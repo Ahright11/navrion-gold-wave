@@ -48,29 +48,43 @@ export default function Services() {
   const current = services[active];
 
   return (
-    <section id="services" className="h-full flex flex-col bg-white px-3 sm:px-6 lg:px-8 pt-12 sm:pt-14 md:pt-8 pb-2 sm:pb-4 md:pb-8 overflow-hidden">
-      <div className="container mx-auto max-w-6xl flex flex-col h-full md:justify-center">
+    <section id="services" className="relative min-h-screen md:h-full flex flex-col bg-white px-3 sm:px-6 lg:px-8 pt-12 sm:pt-14 md:pt-24 pb-2 sm:pb-4 md:pb-8 overflow-hidden">
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none flex items-center justify-center"
+      >
+        <img
+          src="/nv-emblem-brand.svg"
+          alt=""
+          aria-hidden
+          className="h-[78%] md:h-[80%] w-auto opacity-[0.24]"
+        />
+      </div>
+      <div className="relative container mx-auto max-w-6xl flex flex-col flex-1 md:h-full md:justify-start">
 
         {/* Header — company intro + stats */}
-        <div className="text-center mb-1 min-[390px]:mb-1.5 sm:mb-4 md:mb-6 shrink-0">
+        <div className="text-center mb-1 min-[390px]:mb-1.5 sm:mb-4 md:mb-3 shrink-0">
           <p className="font-raleway text-[8px] min-[390px]:text-[9px] sm:text-xs tracking-[0.15em] uppercase text-[hsl(208_74%_42%)] mb-0.5 sm:mb-2 reveal">
             {t.ourServices}
           </p>
-          <h2 className="font-display font-bold text-sm min-[390px]:text-base sm:text-2xl md:text-3xl lg:text-4xl text-[hsl(208_80%_18%)] mb-0.5 min-[390px]:mb-1 sm:mb-3 reveal" style={{ transitionDelay: "150ms" }}>
+          <h2 className="font-display font-bold text-sm min-[390px]:text-base sm:text-2xl md:text-3xl lg:text-4xl text-[hsl(208_80%_18%)] mb-0.5 min-[390px]:mb-1 sm:mb-2 reveal" style={{ transitionDelay: "150ms" }}>
             {t.fullFleet}
           </h2>
-          <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-3 reveal hidden sm:block" style={{ transitionDelay: "250ms" }}>
+          <p className="font-raleway text-[9px] min-[390px]:text-[10px] sm:text-xs md:text-sm tracking-[0.18em] uppercase text-[hsl(208_74%_42%)] font-medium mb-1 sm:mb-3 reveal" style={{ transitionDelay: "200ms" }}>
+            {t.servicesTagline}
+          </p>
+          <p className="font-raleway sm:text-sm md:text-[14px] text-[hsl(215_15%_40%)] max-w-3xl mx-auto leading-snug sm:mb-2 reveal hidden sm:block" style={{ transitionDelay: "250ms" }}>
             {t.servicesIntro}
           </p>
           {/* Desktop — stacked 3-line list */}
-          <div className="max-w-3xl mx-auto sm:mb-2 reveal hidden sm:block" style={{ transitionDelay: "300ms" }}>
-            <p className="font-raleway sm:text-xs md:text-sm text-[hsl(208_80%_18%)] leading-relaxed font-medium mb-1.5">
+          <div className="max-w-3xl mx-auto sm:mb-1.5 reveal hidden sm:block" style={{ transitionDelay: "300ms" }}>
+            <p className="font-raleway sm:text-sm md:text-[15px] text-[hsl(208_80%_18%)] leading-relaxed font-medium mb-1.5">
               {t.chartererCoop}
             </p>
             {t.chartererList.map((line, i) => (
               <p
                 key={i}
-                className="font-raleway text-[10px] sm:text-[11px] md:text-xs text-[hsl(215_15%_45%)] leading-relaxed tracking-wide"
+                className="font-raleway text-[11px] sm:text-[12px] md:text-[13px] text-[hsl(215_15%_45%)] leading-relaxed tracking-wide"
               >
                 {line}
               </p>
@@ -104,8 +118,14 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <p className="font-raleway sm:text-xs md:text-sm text-[hsl(215_15%_50%)] max-w-2xl mx-auto leading-relaxed sm:mb-4 reveal hidden sm:block italic" style={{ transitionDelay: "350ms" }}>
+          <p className="font-raleway sm:text-sm md:text-[13.5px] text-[hsl(215_15%_45%)] max-w-3xl mx-auto leading-snug sm:mb-1 reveal hidden sm:block italic" style={{ transitionDelay: "350ms" }}>
             {t.envStrategy}
+          </p>
+          <p className="font-raleway sm:text-sm md:text-[13.5px] text-[hsl(215_15%_40%)] max-w-3xl mx-auto leading-snug sm:mb-1 reveal hidden sm:block" style={{ transitionDelay: "400ms" }}>
+            {t.safetyCulture}
+          </p>
+          <p className="font-raleway sm:text-sm md:text-[13.5px] text-[hsl(208_80%_22%)] max-w-3xl mx-auto leading-snug sm:mb-2 reveal hidden sm:block font-medium" style={{ transitionDelay: "450ms" }}>
+            {t.trustValue}
           </p>
 
           {/* Stats row */}
@@ -126,7 +146,7 @@ export default function Services() {
             </div>
             <div className="w-px h-4 sm:h-7 bg-[hsl(210_15%_85%)]" />
             <div className="text-center">
-              <p className="font-raleway font-bold text-[10px] min-[390px]:text-xs sm:text-lg md:text-xl text-[hsl(208_80%_18%)] tabular-nums">18,960,000+</p>
+              <p className="font-raleway font-bold text-[10px] min-[390px]:text-xs sm:text-lg md:text-xl text-[hsl(208_80%_18%)] tabular-nums">19,150,000+</p>
               <p className="font-raleway text-[5px] min-[390px]:text-[6px] sm:text-[9px] tracking-[0.1em] uppercase text-[hsl(215_15%_55%)]">{t.statsCargo}</p>
             </div>
             <div className="w-px h-4 sm:h-7 bg-[hsl(210_15%_85%)]" />
@@ -136,12 +156,23 @@ export default function Services() {
             </div>
           </div>
 
-          {/* PSC badge — centered below stats */}
-          <div className="flex justify-center mt-1.5 min-[390px]:mt-2 sm:mt-3 reveal" style={{ transitionDelay: "400ms" }}>
+          {/* PSC badge + Our Vision trigger — centered below stats */}
+          <div className="flex flex-wrap justify-center items-center gap-2 min-[390px]:gap-3 mt-1.5 min-[390px]:mt-2 sm:mt-3 reveal" style={{ transitionDelay: "400ms" }}>
             <button onClick={() => setShowPsc(true)} className="inline-flex items-center gap-2 min-[390px]:gap-2.5 sm:gap-3 px-3 min-[390px]:px-4 sm:px-5 py-1.5 min-[390px]:py-2 sm:py-2.5 bg-[hsl(208_80%_18%)] hover:bg-[hsl(208_80%_22%)] text-white rounded-sm transition-all group cursor-pointer">
               <span className="font-raleway font-bold text-base min-[390px]:text-lg sm:text-2xl">#8</span>
               <span className="font-raleway text-[8px] min-[390px]:text-[9px] sm:text-xs text-white/60">Top 10 PSC Worldwide</span>
               <span className="text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all text-sm sm:text-base">→</span>
+            </button>
+            {/* Desktop — Our Vision modal trigger */}
+            <button
+              onClick={() => setShowVision(true)}
+              className="hidden md:inline-flex items-center gap-3 px-5 py-2.5 border border-[hsl(208_74%_42%/0.3)] bg-white/60 hover:bg-[hsl(208_74%_42%/0.08)] hover:border-[hsl(208_74%_42%/0.5)] text-[hsl(208_80%_18%)] rounded-sm transition-all group cursor-pointer"
+            >
+              <div className="w-6 h-6 rounded bg-[hsl(208_80%_18%)] flex items-center justify-center shrink-0">
+                <span className="text-white font-display font-bold text-[10px]">NV</span>
+              </div>
+              <span className="font-raleway text-xs tracking-[0.12em] uppercase font-medium">Our Vision</span>
+              <ArrowUpRight size={14} strokeWidth={1.75} className="text-[hsl(208_74%_42%)] transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </button>
           </div>
 
@@ -182,7 +213,7 @@ export default function Services() {
           </div>
 
           <div key={`panel-${active}`} className="animate-fadeIn">
-            <div className="grid grid-cols-[1fr_auto] gap-8 lg:gap-14 py-6 lg:py-8">
+            <div className="grid grid-cols-[1fr_auto] gap-8 lg:gap-14 py-4 lg:py-5">
               <div>
                 <p className="font-raleway text-xs tracking-[0.12em] uppercase text-[hsl(208_74%_42%)] mb-3">
                   {current.subtitle}
@@ -267,8 +298,24 @@ export default function Services() {
           </div>
         </div>
 
+        {/* Mobile — basic text (servicesIntro + env/safety/trust) inline, above Our Vision dropdown */}
+        <div className="md:hidden flex flex-col gap-1 mt-1 mb-1 px-0.5 reveal" style={{ transitionDelay: '320ms' }}>
+          <p className="font-raleway text-[9px] min-[390px]:text-[10px] text-[hsl(215_15%_40%)] leading-snug">
+            {t.servicesIntro}
+          </p>
+          <p className="font-raleway text-[8.5px] min-[390px]:text-[9.5px] text-[hsl(215_15%_45%)] leading-snug italic">
+            {t.envStrategy}
+          </p>
+          <p className="font-raleway text-[8.5px] min-[390px]:text-[9.5px] text-[hsl(215_15%_45%)] leading-snug">
+            {t.safetyCulture}
+          </p>
+          <p className="font-raleway text-[9px] min-[390px]:text-[10px] text-[hsl(208_80%_22%)] leading-snug font-medium">
+            {t.trustValue}
+          </p>
+        </div>
+
         {/* Mobile — "Our Vision" expandable + service cards */}
-        <div className="md:hidden flex flex-col gap-1 min-[390px]:gap-1.5 mt-1 flex-1">
+        <div className="md:hidden flex flex-col gap-1 min-[390px]:gap-1.5 flex-1">
           {/* Our Vision toggle */}
           <button
             onClick={() => setShowVision(!showVision)}
@@ -311,33 +358,33 @@ export default function Services() {
           {services.map((s, i) => {
             const MobileIcon = s.icon;
             return (
-              <div key={i} className="reveal-card flex-1 flex flex-col" style={{ transitionDelay: `${400 + i * 100}ms` }}>
-                <div className="border border-[hsl(210_15%_88%)] p-2 min-[390px]:p-2.5 min-[430px]:p-3 flex-1 flex flex-col justify-center">
-                  <div className="flex items-center gap-2 min-[390px]:gap-2.5 mb-1 min-[390px]:mb-1.5">
-                    <div className="w-6 h-6 min-[390px]:w-7 min-[390px]:h-7 min-[430px]:w-8 min-[430px]:h-8 rounded-md bg-[hsl(208_80%_18%)] flex items-center justify-center shrink-0">
-                      <MobileIcon size={12} strokeWidth={1.5} className="text-white min-[390px]:w-3.5 min-[390px]:h-3.5 min-[430px]:w-4 min-[430px]:h-4" />
+              <div key={i} className="reveal-card" style={{ transitionDelay: `${400 + i * 100}ms` }}>
+                <div className="border border-[hsl(210_15%_88%)] bg-white/70 px-2 py-1.5 min-[390px]:px-2.5 min-[390px]:py-2">
+                  <div className="flex items-center gap-2 min-[390px]:gap-2.5 mb-1">
+                    <div className="w-6 h-6 min-[390px]:w-7 min-[390px]:h-7 rounded-md bg-[hsl(208_80%_18%)] flex items-center justify-center shrink-0">
+                      <MobileIcon size={12} strokeWidth={1.5} className="text-white min-[390px]:w-3.5 min-[390px]:h-3.5" />
                     </div>
-                    <div>
-                      <h3 className="font-display font-bold text-[11px] min-[390px]:text-[12px] min-[430px]:text-[14px] text-[hsl(208_80%_18%)] leading-tight">{s.title}</h3>
-                      <p className="font-raleway text-[6px] min-[390px]:text-[7px] min-[430px]:text-[8px] tracking-[0.08em] uppercase text-[hsl(208_74%_42%)]">
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-display font-bold text-[12px] min-[390px]:text-[13px] text-[hsl(208_80%_18%)] leading-tight">{s.title}</h3>
+                      <p className="font-raleway text-[7px] min-[390px]:text-[8px] tracking-[0.08em] uppercase text-[hsl(208_74%_42%)]">
                         {s.subtitle}
                       </p>
                     </div>
                   </div>
-                  <p className="font-raleway text-[8px] min-[390px]:text-[9px] min-[430px]:text-[10px] text-[hsl(215_15%_45%)] leading-snug mb-1 min-[390px]:mb-1.5 line-clamp-2 min-[430px]:line-clamp-3">
+                  <p className="font-raleway text-[9px] min-[390px]:text-[10px] text-[hsl(215_15%_45%)] leading-snug mb-1 line-clamp-2">
                     {s.description}
                   </p>
-                  <div className="flex flex-wrap gap-0.5 min-[390px]:gap-1 min-[430px]:gap-1.5">
+                  <div className="flex flex-wrap gap-1">
                     {s.credentials.map((c) => {
                       const CIcon = c.icon;
                       const hasCert = "cert" in c && !!c.cert;
-                      const base = "flex items-center gap-0.5 min-[390px]:gap-1 py-0.5 px-1.5 min-[390px]:px-2 min-[430px]:py-1 min-[430px]:px-2.5 bg-[hsl(208_80%_18%)] rounded-sm";
+                      const base = "flex items-center gap-1 py-0.5 px-1.5 min-[390px]:px-2 bg-[hsl(208_80%_18%)] rounded-sm";
                       const inner = (
                         <>
-                          <CIcon size={7} strokeWidth={1.5} className="text-[hsl(208_74%_65%)] min-[390px]:w-2 min-[390px]:h-2 min-[430px]:w-2.5 min-[430px]:h-2.5" />
-                          <span className="font-raleway text-[6px] min-[390px]:text-[7px] min-[430px]:text-[8px] tracking-[0.03em] uppercase text-white/90 font-medium">{c.text}</span>
+                          <CIcon size={8} strokeWidth={1.5} className="text-[hsl(208_74%_65%)] min-[390px]:w-2.5 min-[390px]:h-2.5" />
+                          <span className="font-raleway text-[7px] min-[390px]:text-[8px] tracking-[0.03em] uppercase text-white/90 font-medium">{c.text}</span>
                           {hasCert && (
-                            <ArrowUpRight size={8} strokeWidth={1.75} className="text-white/50 -mr-0.5 min-[390px]:w-2 min-[390px]:h-2 min-[430px]:w-2.5 min-[430px]:h-2.5" />
+                            <ArrowUpRight size={8} strokeWidth={1.75} className="text-white/50 -mr-0.5 min-[390px]:w-2.5 min-[390px]:h-2.5" />
                           )}
                         </>
                       );
@@ -419,6 +466,82 @@ export default function Services() {
                 <Download size={14} strokeWidth={1.5} />
                 PDF
               </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Our Vision Modal — desktop only (mobile keeps inline dropdown) */}
+      {showVision && (
+        <div
+          data-fleet-modal
+          className="fixed inset-0 z-[200] hidden md:flex items-center justify-center animate-fadeIn"
+          style={{ backgroundColor: "rgba(5, 15, 30, 0.92)", backdropFilter: "blur(10px)" }}
+          onClick={() => setShowVision(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl mx-4 sm:mx-6 max-h-[88vh] overflow-auto bg-white rounded-sm shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowVision(false)}
+              className="absolute top-4 right-4 text-[hsl(215_15%_50%)] hover:text-[hsl(208_80%_18%)] transition-colors z-10"
+              aria-label="Close"
+            >
+              <X size={24} strokeWidth={1.5} />
+            </button>
+
+            {/* Header band */}
+            <div
+              className="px-8 sm:px-12 lg:px-16 pt-10 sm:pt-12 pb-6 relative overflow-hidden"
+              style={{
+                background: "linear-gradient(135deg, hsl(208 80% 18%) 0%, hsl(208 74% 28%) 100%)",
+              }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-11 h-11 rounded bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                  <span className="text-white font-display font-bold text-sm tracking-wide">NV</span>
+                </div>
+                <div>
+                  <p className="font-raleway text-[10px] tracking-[0.25em] uppercase text-[hsl(208_74%_75%)] mb-1">
+                    New Vision Shipping
+                  </p>
+                  <h3 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-white tracking-wide">
+                    Our Vision
+                  </h3>
+                </div>
+              </div>
+              <p className="font-raleway text-xs sm:text-sm tracking-[0.18em] uppercase text-[hsl(208_74%_75%)] font-medium">
+                Safety · Efficiency · Excellence
+              </p>
+            </div>
+
+            {/* Body */}
+            <div className="px-8 sm:px-12 lg:px-16 py-8 sm:py-10 flex flex-col gap-5 sm:gap-6">
+              <p className="font-raleway text-[15px] sm:text-base lg:text-[17px] text-[hsl(215_15%_30%)] leading-relaxed">
+                {t.servicesIntro}
+              </p>
+              <p className="font-raleway text-[15px] sm:text-base lg:text-[17px] text-[hsl(215_15%_35%)] leading-relaxed italic border-l-2 border-[hsl(208_74%_42%/0.4)] pl-5">
+                {t.envStrategy}
+              </p>
+              <p className="font-raleway text-[15px] sm:text-base lg:text-[17px] text-[hsl(215_15%_30%)] leading-relaxed">
+                {t.safetyCulture}
+              </p>
+              <p className="font-raleway text-base sm:text-[17px] lg:text-lg text-[hsl(208_80%_22%)] leading-relaxed font-medium">
+                {t.trustValue}
+              </p>
+
+              <div className="h-px bg-[hsl(210_15%_88%)] my-2" />
+
+              <p className="font-raleway text-[14px] sm:text-[15px] text-[hsl(215_15%_40%)] leading-relaxed">
+                {t.companyIntro}
+              </p>
+              <p className="font-raleway text-[14px] sm:text-[15px] text-[hsl(215_15%_45%)] leading-relaxed">
+                {t.companyCerts}
+              </p>
+              <p className="font-raleway text-[14px] sm:text-[15px] text-[hsl(215_15%_45%)] leading-relaxed italic">
+                {t.companyTeam}
+              </p>
             </div>
           </div>
         </div>
